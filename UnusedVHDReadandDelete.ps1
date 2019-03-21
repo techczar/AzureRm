@@ -1,7 +1,7 @@
-#############################################################
-### Author:Sanjoy Saha ######################################
-### This script has been provided as-is and the author does #
-### bear any responsibility #################################
+#################################################################
+### Author:Sanjoy Saha ##########################################
+### This script has been provided as-is and the author does not #
+### bear any responsibility #####################################
 
 
 #Login to Azure Account
