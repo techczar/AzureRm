@@ -20,7 +20,7 @@ $UMVHDS = $UMD | Where {$_.ICloudBlob.Properties.LeaseStatus -eq "Unlocked"}
 $MVHDS = Get-AzureRmDisk
 
 #Filter Managed Disks which do not have any Owner i.e Orphaned
-$MVHD = $MVHDS | Where {$_.OwnerId -eq $null}
+$MVHD = $MVHDS | Where {$_.ManagedBy -eq $null}
 
 #Get all the objects with No Parent
 $RmDiskInfo = foreach ($UMVHD in $UMVHDS) {
